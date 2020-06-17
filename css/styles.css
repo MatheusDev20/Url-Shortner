@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 92%);
+}
+.header {
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.links-container{
+    margin-right: 40%;
+}
+.buttons-container {
+    margin-right: 5%;
+}
+.img-container{
+    margin-left: 5%;
+}
+.links {
+    display: flex;
+    list-style: none;
+}
+.links > li {
+    margin-left: 25px;
+}
+.links > li > a {
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+.links > li > a:hover{
+    color: black;
+}
+.btn-login {
+    margin-right: 25px;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    color: hsl(257, 7%, 63%);
+    font-weight: bold;
+    outline: none;
+}
+.btn-login:hover{
+    color: black;
+}
+.btn-sign {
+    background-color: hsl(180, 66%, 49%);
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.btn-sign:hover {
+    background-color:  hsl(180, 66%, 60%);
+}
+.main-content {
+    display: flex;
+    justify-content:space-around;
+}
+.left-main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    align-content: center;
+    justify-content: center;
+}
+.left-main-content > div > h1 {
+    font-size: 45px;
+    color: hsl(260, 8%, 14%);
+    letter-spacing: 1px;
+}
+.left-main-content > div > p {
+    font-size: 18px;
+    color:hsl(257, 7%, 63%);
+    font-weight: 700;
+}
+.btn-started {
+    background-color: hsl(180, 66%, 49%);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+.btn-started:hover {
+    background-color: hsl(180, 66%, 60%);
+}
+#share-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#share-link > form  {
+    display: flex;
+    height: 145px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../images/bg-shorten-desktop.svg');
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 10px;
+    border:none;
+    height: 45px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: hsl(0, 0%, 40%);
+    outline: none;
+}
+.shorten-button {
+    background-color: hsl(180, 66%, 49%);
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin-right: 25px;
+}
+.shorten-button:hover {
+    background-color: hsl(180, 66%, 60%);
+}
+#short-result {
+    margin-left: 3.4%;
+    margin-right: 3.4%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+    align-items: center;
+}
+.result-div {
+    width: 80%;
+    background-color: #fff;
+    height: 70px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-top: 15px;
+    justify-content: space-between;
+    border: thin 1px black;
+    border-radius: 2px;
+}
+.copy-button{
+    background-color: hsl(180, 66%, 49%);
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin-left: 60px;
+}
+.copy-button:hover {
+    background-color: hsl(257, 27%, 26%);
+}
+.minified-link {
+    color:hsl(257, 27%, 26%);
+    font-weight: bold;
+}
+.link-result {
+    background-color: #fff;
+    height: 70px;
+    width: 85%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#statistics{
+    margin-left: 3.4%;
+    margin-right: 3.4%;
+    margin-top: 50px;
+}
+.main-statistics {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.title > h1 {
+    font-size: 40px;
+    color: hsl(260, 8%, 14%);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.title > p {
+    color:hsl(257, 7%, 63%);
+    font-weight: bold;
+    margin-top:10px;
+}
+.int-info{
+    display:flex;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 5px;
+}
+.int-info > img {
+    height: 50px;
+    width: 50px;
+}
+.int-info > h2 {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.int-info > p {
+    color: hsl(257, 7%, 63%);
+    margin-top: 20px;
+}
+#try{
+    height: 200px;
+    margin-left: 3.4%;
+    margin-right: 3.4%;
+    margin-top: 50px;
+}
+.try-main {
+    background-image: url('../images/bg-boost-desktop.svg');
+    height: 100%;
+    background-color: hsl(257, 27%, 26%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.try-main > div > h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+
+#footer {
+    border:1px solid #1A1A1D;
+    height: 300px;
+    margin-left: 3.4%;
+    margin-right: 3.4%;
+    background-color: #1A1A1D;;
+}
+.footer-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 45px;
+}
+.list-title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.footer-logo {
+    color:#fff;
+    font-size: 30px;
+}
+.footer-list {
+    list-style: none;
+}
+.footer-list > li {
+    margin-top: 10px;
+}
+.footer-list > li > a {
+    color: hsl(257, 7%, 63%);
+    text-decoration: none;
+
+}
+.footer-list > li > a:hover{
+    color: #fff;
+}
+.social-icons > img {
+    margin-left: 40px;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .left-image {
+        display: none;
+    }
+    .btn-started {
+        margin-left: 120px;
+        margin-bottom: 15px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .int-info {
+        margin-bottom: 15px;
+    }
+    .shorten-button{
+        margin-left: 15px;
+    }
+    .try-main > div > h1 {
+        font-size: 30px;
+    }
+    .try-main > button {
+        margin-right: 150px;
+        margin-top: 40px;
+    }
+}
